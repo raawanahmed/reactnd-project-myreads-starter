@@ -39,10 +39,9 @@ class Book extends Component {
             <select
               value={book.shelf}
               onChange={(event) => {
-               
                 this.props.handleShelfUpdate(book, event.target.value); 
-                console.log("Event", event.target.value);
-                console.log("book", book);
+                // console.log("Event", event.target.value);
+                // console.log("book", book);
               }}
             >
               <option value="move" disabled>
