@@ -44,16 +44,16 @@ class BooksShelf extends Component {
     bookWillBeUpdated.shelf = shelf; // change shelf of the book has been updated
     let newBooks = [...this.state.allBooks];
     newBooks[index] = bookWillBeUpdated;
-    console.log(this.state.allBooks[index], newBooks[index]);
+    // console.log(this.state.allBooks[index], newBooks[index]);
     this.setState({ allBooks: newBooks });
     await update(book, shelf); // update in database
-   // window.location.reload();
+    window.location.reload();
   };
 
   render() {
-    console.log("1",this.state.currentlyReading);
-    console.log("2", this.state.wantToRead);
-    console.log("3",this.state.read);
+    // console.log("1",this.state.currentlyReading);
+    // console.log("2", this.state.wantToRead);
+    // console.log("3",this.state.read);
     return (
       <div className="app">
         <div className="list-books">
