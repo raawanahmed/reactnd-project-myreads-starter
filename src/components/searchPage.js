@@ -49,7 +49,7 @@ class SearchPage extends Component {
   };
 
   render() {
-    if (this.state.search === "") {
+    if (this.state.searchValue === "") {
       this.state.currentBooks = [];
     }
     return (
